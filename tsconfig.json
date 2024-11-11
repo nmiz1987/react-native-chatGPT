@@ -1,0 +1,33 @@
+{
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "extends": "expo/tsconfig.base",
+  "compilerOptions": {
+    "allowJs": false,
+    "strict": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "module": "es2022",
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": false,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noUnusedLocals": false,
+    "sourceMap": true,
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "jsx": "react-jsx",
+    "typeRoots": ["./node_modules/@types", "./src/types"]
+  },
+  "exclude": ["node_modules", "babel.config.js", "metro.config.js"],
+  "include": ["**/*.ts", "**/*.tsx", ".expo/types/**/*.ts", "expo-env.d.ts"]
+}
